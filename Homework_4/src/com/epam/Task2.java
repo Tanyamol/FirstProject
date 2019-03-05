@@ -15,7 +15,8 @@ public class Task2 {
             char ch=str.charAt(i);
             if(strNew.contains(String.valueOf(ch))){
                 continue;
-            } else strNew+=ch;
+            } 
+            else strNew+=ch;
         }
               return strNew;
 }
