@@ -6,7 +6,7 @@ public class Task2 {
     public static void main(String[] args) {
         System.out.println("Input string: ");
         Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
+        String str=sc.nextLine().toLowerCase();
         System.out.println(lineProcessing(str));
     }
     public static String lineProcessing(String str){
