@@ -13,7 +13,7 @@ public class Task2 {
         String lineNew="";
         for(int i=0;i<line.length();i++){
             char ch=line.charAt(i);
-            if(lineNew.indexOf(ch) == -1) //-1, если символ не встречается.
+            if(lineNew.indexOf(ch) == -1)
               lineNew+=ch;
         }
               return lineNew;
