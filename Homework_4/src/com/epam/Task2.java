@@ -13,10 +13,8 @@ public class Task2 {
         String strNew="";
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
-            if(strNew.contains(String.valueOf(ch))){
-                continue;
-            } 
-            else strNew+=ch;
+            if(strNew.indexOf(ch) == -1)
+              strNew+=ch;
         }
               return strNew;
 }
