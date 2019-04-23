@@ -1,8 +1,9 @@
 package controller;
+import java.io.Serializable;
 import java.time.Year;
 
 
-public class Validator {
+public class Validator implements Serializable {
 
     public void verifyArrayLength(int length) {
         if (length <= 0) {

@@ -2,7 +2,9 @@ package view;
 import controller.Validator;
 import model.Books;
 
-public class ViewBook {
+import java.io.Serializable;
+
+public class ViewBook implements Serializable {
 
     Validator validator = new Validator();
 

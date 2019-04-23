@@ -2,9 +2,13 @@ package controller;
 
 import model.Book;
 import model.Books;
+import model.ObjectStream;
 import view.ViewBook;
 
-public class ControllerBooks {
+import java.io.Serializable;
+import java.util.Arrays;
+
+public class ControllerBooks implements Serializable {
 
     private Books books;
     private ViewBook viewBooks=new ViewBook();
@@ -21,7 +25,7 @@ public class ControllerBooks {
         books.add(book2);
     }
     public void run(){
-        init();
+          init();
         viewBooks.print(books);
 
         viewBooks.print("\nEnter percent->");
@@ -54,7 +58,8 @@ public class ControllerBooks {
             System.out.println(element.getCost());
         }
 
-
+        ObjectStream object = new ObjectStream();
+        object.workWithFile(books);
 
 
 

@@ -1,9 +1,10 @@
 package controller;
 
+import java.io.Serializable;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class InputUtil {
+public class InputUtil implements Serializable {
 
     private static Scanner sc=new Scanner(System.in);
     public static int inputInt() {

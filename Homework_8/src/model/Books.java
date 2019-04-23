@@ -2,10 +2,11 @@ package model;
 
 import controller.Validator;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Books {
+public class Books implements Serializable {
 
     private Book [] books;
     private int count=0;
@@ -18,7 +19,7 @@ public class Books {
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
-        books=new Book[length];
+        books = new Book[length];
     }
 
     public Book[] getBooks() {
@@ -110,4 +111,8 @@ public class Books {
         return newBooks;
     }
 
+    @Override
+    public String toString() {
+        return  Arrays.toString(books);
+    }
 }
